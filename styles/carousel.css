@@ -17,11 +17,13 @@
 	align-items: center;
 	overflow: hidden;
 	background-color: transparent;
-	cursor: pointer;
 	border: 0;
 	padding: 0;
 }
-[component^="carousel"] > button:is(:hover,:focus-visible){
+[component^="carousel"] > button:not([disabled]){
+	cursor: pointer;
+}
+[component^="carousel"] > button:not([disabled]):is(:hover,:focus-visible){
 	--bg-colour: rgba(128,128,128,0.5);
 	background-color: var(--bg-colour);
 	box-shadow: 0 0 10px 7px var(--bg-colour);
@@ -35,6 +37,9 @@
 	border: 0.4em solid black;
 	border-bottom: 0;
 	border-right: 0;
+}
+[component^="carousel"] > button[disabled]::before{
+	border-color: grey;
 }
 [component^="carousel"] > button:not(:hover)::before{
 	box-shadow: 0 0 2px 1px white, inset 0 0 2px 1px white;
@@ -71,6 +76,7 @@
 	grid-auto-columns: 100%;
 	overscroll-behavior-inline: contain;
 	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
 	height: calc(100% - 4px);
 }
 [component^="carousel"] > ul:focus-visible{
