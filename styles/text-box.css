@@ -1,0 +1,12 @@
+@import url(./box.css);
+
+[component="text-box"]{
+	height: calc(100% - .5em);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+[component="text-box"] p{
+	width: 50%;
+}

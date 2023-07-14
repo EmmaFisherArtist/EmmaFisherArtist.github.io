@@ -1,0 +1,23 @@
+@import url(./box.css);
+
+button[component^="image-display-box"]{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: calc(100% - .5em);/*minus margin*/
+	width: 100%;
+	border: 0;
+	font: inherit;
+	cursor: pointer;
+}
+button[component^="image-display-box"] img{
+	display: block;
+	min-width: 0;
+	min-height: 0;
+	max-width: 100%;
+	flex: 1 1 0;
+	object-fit: contain;
+}
+button[component^="image-display-box"] h3{
+	text-align: center;
+}

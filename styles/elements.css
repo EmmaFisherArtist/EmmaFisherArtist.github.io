@@ -1,0 +1,89 @@
+:root{
+	font-family: 'Julius Sans One', sans-serif;
+	font-weight: 400;
+}
+body{
+	margin: 0;
+	display: grid;
+	grid-template-columns: min-content 1fr;
+}
+
+
+*{
+	box-sizing: border-box;
+}
+
+a:focus-visible{
+	outline: 1px solid black;
+}
+
+h1{
+	letter-spacing: .4rem;
+	font-size: 1.75rem;
+	font-weight: inherit;
+	margin: 0;
+	margin-bottom: 1.5em;
+}
+
+header{
+	--top: 2.6em;
+	margin: var(--top) 1em;
+	width: min-content;
+	height: min-content;
+	position: sticky;
+	top: var(--top);
+}
+
+header a{
+	text-decoration:none;
+	color: inherit;
+}
+
+header ul{
+	padding: 0;
+	list-style-type: none
+}
+header ul[aria-label=Main] li{
+	margin: .5em 0;
+}
+header ul[aria-label=Main] li a{
+	width: 100%;
+	display: inline-block;
+	padding: .25em;
+}
+header ul[aria-label=Main] li a:is(:focus-visible, :hover){
+	background-color: rgba(0, 0, 0, 0.25);
+}
+
+
+header ul[aria-label=Socials]{
+	display: flex;
+	gap: .5em;
+	color: grey;
+}
+header ul[aria-label=Socials] :is(svg, a){
+	height: 1em;
+	display: block;
+}
+header ul[aria-label=Socials] li{
+	display: block;
+	width: min-content;
+}
+header ul[aria-label=Socials] li a:is(:focus-visible, :hover){
+	color: var(--brand-colour);
+}
+
+
+main{
+	min-height: 100vh;
+}
+
+.non-visual{
+	opacity: 0;
+	outline-color: transparent;
+	overflow: hidden;
+	width: 1px;
+	height: 1px;
+	display: block;
+	position: absolute;
+}
