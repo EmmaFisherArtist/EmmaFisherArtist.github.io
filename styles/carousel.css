@@ -37,6 +37,7 @@
 	border: 0.4em solid black;
 	border-bottom: 0;
 	border-right: 0;
+	transition: border-color .2s;
 }
 [component^="carousel"] > button[disabled]::before{
 	border-color: grey;
