@@ -4,6 +4,7 @@ button[component^="image-display-box"]{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	align-items: center;
 	height: calc(100% - .5em);/*minus margin*/
 	width: 100%;
 	border: 0;
