@@ -52,7 +52,7 @@ header ul[aria-label=Main] li a{
 	padding: .25em;
 }
 header ul[aria-label=Main] li a:is(:focus-visible, :hover){
-	background-color: rgba(0, 0, 0, 0.25);
+	background-color: rgba(0, 0, 0, 0.1);
 }
 
 
@@ -60,6 +60,7 @@ header ul[aria-label=Socials]{
 	display: flex;
 	gap: .5em;
 	color: grey;
+	padding: 0 0.5em;
 }
 header ul[aria-label=Socials] :is(svg, a){
 	height: 1em;
