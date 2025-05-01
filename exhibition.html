@@ -4,24 +4,18 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Emma Fisher Artist</title>
-		
 		<link rel="stylesheet" href="/styles/elements.css">
-		<link rel="stylesheet" href="/styles/carousel.css">
-		<script defer src="/scripts/carousel.js"></script>
-		<link rel="stylesheet" href="/styles/text-box.css">
-		<link rel="stylesheet" href="/styles/image-display-box.css">
+		<link rel="stylesheet" href="/styles/text-body.css">
 		<link rel="stylesheet" href="/res/JuliusSansOneStyle.css">
 	</head>
 	<body>
 		<header>
-			<a href="/"><h1>Emma<br/>Fisher</h1></a>
+			<a href="/" class="fancy-title"><h1>Emma<br/>Fisher</h1></a>
 			<nav>
-				<ul aria-label="Main">
-					<li><a href="/work.html">Current Works</a></li>
+				<ul aria-label="Main" class="title-font">
 					<li><a href="/statement.html">Artist Statement</a></li>
-					<li><a href="/bio.html">Biography</a></li>
-					<li><a href="/archive.html">Archive</a></li>
-					<li><a href="/archive.html">Exhibition History</a></li>
+					<li><a href="/work.html">Available Works</a></li>
+					<li><a href="/exhibition.html">Exhibition History</a></li>
 				</ul>
 				<ul aria-label="Socials">
 					<li><a href="https://www.instagram.com/emmafisherhere/" style="--brand-colour:#ff0076; scale: .9/*so there is padding*/;">
@@ -37,51 +31,35 @@
 						</svg>
 					</a></li>
 				</ul>
+				<span class="small-text">&copy; All images copyright of Emma Fisher</span>
 			</nav>
 		</header>
-		<main component="carousel">
-			<button><span class="non-visual">Previous Item</span></button>
-			<ul>
-				<li>
-					<div component="text-box">
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt omnis vero quasi delectus velit alias saepe corrupti, qui, enim blanditiis labore iste maiores temporibus aspernatur. Architecto itaque omnis delectus iure.</p>
-						<p>Recusandae aliquid officia aliquam voluptatum? Voluptatum eius repellat iure, doloremque unde nostrum natus nemo tenetur, enim consequuntur beatae tempora inventore temporibus officiis vero! Tenetur eos labore ipsum, ipsam nemo vel.</p>
-					</div>
-				</li>
-				<li><button component="image-display-box">
-					<img src="/images/Honestly_not_falling_far_from_the_tree.jpg" />
-					<h3>Honestly not falling far from the tree</h3>
-				</button></li>
-				<li><button component="image-display-box">
-					<img src="/images/The-uncomfortable-spotlight.jpg" />
-					<h3>The uncomfortable spotlight - hot and expectant (time ticking)</h3>
-				</button></li>
-				<li><button component="image-display-box">
-					<img src="/images/Flashes_of_light.jpg" />
-					<h3>Flashes of light (inspiration) in those peculiar Devon hedges</h3>
-				</button></li>
-				<li><button component="image-display-box">
-					<img src="/images/Shinrin_Yoku.jpg" />
-					<h3>Shinrin Yoku – but it's not working. (homage to Saskia)</h3>
-				</button></li>
-				<li><button component="image-display-box">
-					<img src="/images/Uncalled-for-Scrutiny.jpg" />
-					<h3>Uncalled for Scrutiny</h3>
-				</button></li>
-				<!--<button component="image-display-box">
-					<div><img src="" alt=""></div>
-					<h3></h3>
-				</button></li>
-				<li><button component="image-display-box">
-					<div><img src="" alt=""></div>
-					<h3></h3>
-				</button></li>
-				<li><button component="image-display-box">
-					<div><img src="" alt=""></div>
-					<h3></h3>
-				</button></li> -->
+		<main component="text-body">
+			<h2 class="left-title">Exhibition History</h2>
+			<ul class="fancy-list">
+				<li>Shortlisted for the Herbert Smith Freehill Portrait Award- National Portrait Gallery</li>
+				<li>Royal Society of Portrait Painters: Mall Galleries, London</li>
+				<li>Royal West of England Academy, Open Exhibition – Bristol  2024, 2023, 2004</li>
+				<li>Dulwich Picture Gallery, GDST 1 day exhibition - London</li>
+				<li>South West Academy of Arts Open Exhibition – Phoenix, Exeter</li>
+				<li>Bath Society of Artists Summer Open – Victoria Art Gallery, Bath</li>
+				<li>Mount House Gallery, Solo Show - Marlborough</li>
+				<li>Widcombe Studios Gallery , Joint show- Bath</li>
+				<li>Red House Gallery, Joint show– Exeter</li>
+				<li>Green Park Brasserie - Bath</li>
+				<li>Atkinson Gallery  Open Exhibition, Street</li>
+				<li>Ondatjee Hall, Group show – Tiverton</li>
+				<li>Battersea Town Hall, Group show - London</li>
+				<li>Roper Gallery, Group Show -Bath</li>
+				<li>Plough Arts Centre – Torrington</li>
+				<li>Drapers Hall, Collaborative installation - London</li>
+				<li>The Arts Gallery – Devon</li>
+				<li>Clifton College, Solo Exhibition – Bristol</li>
+				<li>World’s End Gallery – South Molton</li>
+				<li>Beatrice Royal Gallery, Group show – Eastleigh</li>
+				<li>Hanging Gallery, Group show – Dorchester</li>
+				<li>The Cube Gallery, Group show – Coventry</li>
 			</ul>
-			<button><span class="non-visual">Next Item</span></button>
 		</main>
 	</body>
 </html>

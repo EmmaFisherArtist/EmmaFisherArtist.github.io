@@ -4,8 +4,12 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Emma Fisher Artist</title>
+		
 		<link rel="stylesheet" href="/styles/elements.css">
-		<link rel="stylesheet" href="/styles/surround.css">
+		<link rel="stylesheet" href="/styles/carousel.css">
+		<script defer src="/scripts/carousel.js"></script>
+		<link rel="stylesheet" href="/styles/text-box.css">
+		<link rel="stylesheet" href="/styles/image-display-box.css">
 		<link rel="stylesheet" href="/res/JuliusSansOneStyle.css">
 	</head>
 	<body class="full-height">
@@ -34,22 +38,43 @@
 				<span class="small-text">&copy; All images copyright of Emma Fisher</span>
 			</nav>
 		</header>
-		<main class="image-surround">
-			<div class="images">
-				<div class="image" style="--url: url(/images/surround/Top1.png);"></div>
-				<div class="image" style="--url: url(/images/surround/Top2.png);"></div>
-				<div class="image" style="--url: url(/images/surround/Top3.png);"></div>
-				<div class="image" style="--url: url(/images/surround/Top4.png);"></div>
-				<div class="image" style="--url: url(/images/surround/Top5.png);"></div>
-			</div>
-			<h2>Emma Fisher</h2>
-			<div class="images">
-				<div class="image" style="--url: url(/images/surround/Bottom1.png);"></div>
-				<div class="image" style="--url: url(/images/surround/Bottom2.png);"></div>
-				<div class="image" style="--url: url(/images/surround/Bottom3.png);"></div>
-				<div class="image" style="--url: url(/images/surround/Bottom4.png);"></div>
-				<div class="image" style="--url: url(/images/surround/Bottom5.png);"></div>
-			</div>
+		<main component="carousel">
+			<button><span class="non-visual">Previous Item</span></button>
+			<ul>
+				<li><button component="image-display-box">
+					<img src="/images/Honestly_not_falling_far_from_the_tree.jpg" />
+					<h3>Honestly not falling far from the tree</h3>
+				</button></li>
+				<li><button component="image-display-box">
+					<img src="/images/The-uncomfortable-spotlight.jpg" />
+					<h3>The uncomfortable spotlight - hot and expectant (time ticking)</h3>
+				</button></li>
+				<li><button component="image-display-box">
+					<img src="/images/Flashes_of_light.jpg" />
+					<h3>Flashes of light (inspiration) in those peculiar Devon hedges</h3>
+				</button></li>
+				<li><button component="image-display-box">
+					<img src="/images/Shinrin_Yoku.jpg" />
+					<h3>Shinrin Yoku – but it's not working. (homage to Saskia)</h3>
+				</button></li>
+				<li><button component="image-display-box">
+					<img src="/images/Uncalled-for-Scrutiny.jpg" />
+					<h3>Uncalled for Scrutiny</h3>
+				</button></li>
+				<!--<button component="image-display-box">
+					<div><img src="" alt=""></div>
+					<h3></h3>
+				</button></li>
+				<li><button component="image-display-box">
+					<div><img src="" alt=""></div>
+					<h3></h3>
+				</button></li>
+				<li><button component="image-display-box">
+					<div><img src="" alt=""></div>
+					<h3></h3>
+				</button></li> -->
+			</ul>
+			<button><span class="non-visual">Next Item</span></button>
 		</main>
 	</body>
 </html>

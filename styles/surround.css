@@ -1,0 +1,31 @@
+.image-surround{
+	width: 100%;
+	display: grid;
+	grid-template-rows: 40% min-content 40%;
+	align-content: center;
+	row-gap: 1em;
+	& .images{
+		height: 100%;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, 150px);
+		grid-template-rows: 100% repeat(auto-fill, 0); /* show only one row */
+		justify-content: center;
+		column-gap: 50px;
+		& .image{
+			background-image: var(--url);
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-position: center;
+			height: 100%;
+			width: 100%;
+		}
+	}
+	h2{
+		display: block;
+		margin: 0;
+		text-align: center;
+		letter-spacing: .4rem;
+		font-size: 1.75rem;
+		font-weight: inherit;
+	}
+}
