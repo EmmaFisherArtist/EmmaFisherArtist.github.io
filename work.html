@@ -133,5 +133,22 @@
 			</ul>
 			<button><span class="non-visual">Next Item</span></button>
 		</main>
+		<dialog id="ImageViewer">
+			<button zoom="1.1">
+				<span aria-hidden="true">+</span>
+				<span class="non-visual">Zoom In</span>
+			</button>
+			<button zoom="0.9">
+				<span aria-hidden="true">&ndash;</span>
+				<span class="non-visual">Zoom Out</span>
+			</button>
+			<button close>
+				<span aria-hidden="true">&times;</span>
+				<span class="non-visual">Close Image Viewer</span>
+			</button>
+			<div class="viewer">
+				<img id="ImageViewerImg">
+			</div>
+		</dialog>
 	</body>
 </html>
