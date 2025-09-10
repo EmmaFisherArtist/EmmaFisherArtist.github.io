@@ -7,10 +7,8 @@
 }
 [component^="carousel"] > button{
 	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	height: 4em;
-	aspect-ratio: 0.5;
+	height: 100%;
+	width: 2em;
 	margin: 1em;
 	display: flex;
 	align-items: center;
@@ -25,18 +23,18 @@
 [component^="carousel"] > button:not([disabled]):hover {
 	outline: transparent;
 	&::before{
-		border-color: grey;
+		border-color: rgb(175, 175, 175);
 	}
 }
 [component^="carousel"] > button:not([disabled]):focus-visible::before{
-	border-color: grey;
+	border-color: rgb(175, 175, 175);
 }
 [component^="carousel"] > button::before{
 	content: "";
 	height: 2em;
 	aspect-ratio: 1;
 	display: block;
-	border: 0.4em solid black;
+	border: 0.4em solid white;
 	border-bottom: 0;
 	border-right: 0;
 	transition: opacity .5s;

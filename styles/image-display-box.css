@@ -10,6 +10,7 @@ button[component^="image-display-box"]{
 	border: 0;
 	font: inherit;
 	cursor: zoom-in;
+	color: white;
 	& img{
 		display: block;
 		min-width: 0;
@@ -42,6 +43,7 @@ button[component^="image-display-box"]{
 	grid-template-rows: min-content 1fr;
 	padding: 0.5em;
 	gap: 0.5em;
+	background-color: var(--background-colour);
 	--scale: 1;
 	--translatex: 0;
 	--translatey: 0;
